@@ -1,0 +1,35 @@
+.MainContent
+,.Footer{
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+.Header{
+    display: flex;
+    align-items: center;
+}
+.Location{
+    width: 25%;
+}
+.Logo{
+    width: 50%;
+}
+.SNS{
+    width: 25%;
+}
+.Nav{
+    display: flex;
+    align-items: center;
+}
+.NavItems{
+    width: 33.33%;
+    justify-content: center;
+}
+.MainItems{
+    display: flex;
+}
+.ItemIntro{
+    width: 33.33%;
+}
+.ItemPic{
+    width: 66.67%;
+}
