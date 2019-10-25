@@ -38,6 +38,9 @@ img[alt="Logo"]{
 .SNS{
     width: 25%;
 }
+.SNS > a > img{
+    max-width: 50px;
+}
 .Nav{
     width: 100%;
     display: flex;
