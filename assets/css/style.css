@@ -2,6 +2,8 @@
 ,.Footer{
     width: 75%;
     margin: 0 auto 0 auto;
+    border-left: double;
+    border-right: double ;
 }
 .Header{
     display: flex;
@@ -52,12 +54,33 @@ a[id^="Nav"]{
     display: flex;
     height: 400px;
 }
-.MainItems:nth-child(odd){
+.MainItems:nth-child(2n+2){
     background-color: lightblue;
 }
-.MainItems:nth-child(even){
+.MainItems:nth-child(2n+3){
     flex-direction: row-reverse;
 
+}
+.Images{    
+    width: 100%;
+    white-space: nowrap;
+    /* white-space nowrap is important */
+    overflow: hidden;
+}
+.Images > img {
+    display: inline-flex;
+    width: 100%;
+    max-height: 400px;
+}
+.Images :first-child{
+    animation: slide 20s ease-in-out infinite;
+}
+@keyframes slide{
+    0% {margin-left:0%;}
+    25% {margin-left:-100%;}
+    50% {margin-left:-200%;}
+    75% {margin-left:-100%;}
+    100% {margin-left:0%;}
 }
 .ItemIntro{
     width: 33.33%;
@@ -66,4 +89,12 @@ a[id^="Nav"]{
 .ItemPic{
     width: 66.67%;
     margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ItemPic > img{
+    max-width: 100%;
+    max-height: 100%;
+
 }
