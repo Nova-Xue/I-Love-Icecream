@@ -51,14 +51,13 @@ img[alt="Logo"]{
 
 }
 .NavItems{
-    
     width: 33.33%;
+    height: 100%;
     color: blue;
-    height: 50%;
     position: relative;
     
 }
-a[id^="Nav"]{
+div[id^="Nav"]{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,4 +110,22 @@ a[id^="Nav"]{
     max-width: 100%;
     max-height: 100%;
 
+}
+.Menus{
+    background-color: lightblue;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.NavItems:first-child{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    position: relative;
+}
+.NavItems:first-child:hover .Menus{
+    display: flex;
 }
