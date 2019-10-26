@@ -16,6 +16,11 @@ body{
     border-right: double ;
     padding: 0.5rem;
 }
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .Header{
     display: flex;
     align-items: center;
@@ -62,6 +67,9 @@ div[id^="Nav"]{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+div[id^="Nav"] > a{
+    text-decoration: none;
 }
 .MainItems{
     display: flex;
